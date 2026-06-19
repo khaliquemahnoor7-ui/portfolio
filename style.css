@@ -527,7 +527,7 @@ img.project-img-placeholder {
 
 .contact-form input {
     background-color: var(--bg-card);
-    border: 2px solid var(--border-slate);
+    border: 2px solid var(--infographic-blue);
     border-radius: 8px;
     padding: 14px 16px;
     color: var(--text-pure);
@@ -539,14 +539,10 @@ img.project-img-placeholder {
     color: #718096;
 }
 
-.contact-form input:focus {
-    outline: none;
-    border-color: var(--accent-brass);
-}
 
 .btn-submit {
     align-self: flex-end;
-    background-color: var(--accent-brass);
+    background-color: var(--infographic-blue);
     color: #000;
     border: none;
     padding: 12px 28px;
@@ -555,7 +551,6 @@ img.project-img-placeholder {
     font-family: var(--font-body);
     cursor: pointer;
 }
-
 /* ==========================================================================
    MOBILE RESPONSIVE ENGINE
    ========================================================================== */
