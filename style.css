@@ -606,3 +606,23 @@ img.project-img-placeholder {
     .extra-card { width: 100%; max-width: 340px; }
     .extra-paragraphs { text-align: center; width: 100%; }
 }
+
+
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .projects-section {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+}
