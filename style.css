@@ -442,21 +442,23 @@ img.project-img-placeholder {
     opacity: 0.85;
 }
 
+
 /* --- FOOTER --- */
 .footer-section {
     background-color: #060709;
     border-top: 2px solid var(--border-slate);
-    padding: 90px 10%;
+    padding: 70px 10%;
     margin-top: 40px;
 }
 
 .footer-container {
     max-width: 1150px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
+}
+
+.footer-cta {
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 .footer-cta h2 {
@@ -464,32 +466,95 @@ img.project-img-placeholder {
     margin-bottom: 5px;
 }
 
-.footer-cta p {
-    color: #718096;
-    margin-bottom: 25px;
-}
-
-.footer-buttons {
+.contact-content {
     display: flex;
-    gap: 15px;
-    margin-top: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    flex-wrap: wrap;
 }
 
-.footer-links {
+.contact-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.contact-icon-circle {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: var(--bg-card);
+    border: 2px solid var(--accent-brass);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: var(--accent-brass);
+    flex-shrink: 0;
+}
+
+.contact-label {
+    font-weight: 600;
+    color: var(--text-pure);
+    margin-bottom: 4px;
+}
+
+.contact-card a {
+    color: #a0aec0;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.contact-card a:hover {
+    color: var(--accent-brass);
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 280px;
+    max-width: 420px;
     display: flex;
     flex-direction: column;
     gap: 18px;
 }
 
-.footer-links a {
-    text-decoration: none;
-    color: #a0aec0;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 1rem;
+.contact-form input {
+    background-color: var(--bg-card);
+    border: 2px solid var(--border-slate);
+    border-radius: 8px;
+    padding: 14px 16px;
+    color: var(--text-pure);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
 }
 
+.contact-form input::placeholder {
+    color: #718096;
+}
+
+.contact-form input:focus {
+    outline: none;
+    border-color: var(--accent-brass);
+}
+
+.btn-submit {
+    align-self: flex-end;
+    background-color: var(--accent-brass);
+    color: #000;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-family: var(--font-body);
+    cursor: pointer;
+}
 
 /* ==========================================================================
    MOBILE RESPONSIVE ENGINE
